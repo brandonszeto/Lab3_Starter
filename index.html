@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <title>Brandon's Meeting Minutes</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/icon" href="images/favicon.ico">
+</head>
+  
+<body>
+  <header>
+    <div class="Heading">
+    <h1>Brandon's Meeting Minutes</h1>
+    </div>
+    <hr>
+    <nav>
+      <ul>
+        <li><a href="#hour1">Hour 1 Notes</a></li>
+        <li><a href="#hour2">Hour 2 Notes</a></li>
+        <li><a href="#hour3">Hour 3 Notes</a></li>
+        <li><a href="#complaint">Complaint Form</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hour1">
+      <hr>
+      <h2>Hour 1 Notes</h2>
+      <p>Brainstorming an idea with <b> extreme potential </b>for a startup:</p>
+      <ul>
+        <li>Have you ever hit a <strong>pothole</strong> on La Jolla Village Drive?</li>
+        <li>I'm sure it makes your car <i>rattle</i> and <em>tosses</em> you out of your seat!</li>
+        <li>You can find ten <em>fascinating</em> facts about potholes <a href="https://www.cityworks.com/blog/10-fascinating-facts-about-potholes/">here</a></li>
+        <li> This worsens <span>carsickness</span></li>
+        <li> We can create La Jolla's very car sock business!</li>
+      </ul>
+
+        <br>
+      <img src="images/carsock.jpg" alt="An example image" width="320">
+    </section>
+    <section id="hour2">
+      <hr>
+      <h2>Hour 2 Notes</h2>
+        <details>
+          <summary>These are notes for the third hour of the meeting</summary>
+          <p> Notes under a summary and details element </p>
+        </details>
+        <audio controls>
+          <source src="media/trombone.wav" type="audio/wav">
+        Your browser does not support the audio element.
+        </audio>
+    </section>
+     <section id="hour3">
+      <hr>
+      <h2>Hour 3 Notes</h2>
+        <details>
+          <summary>These are notes for the third hour of the meeting</summary>
+          <p> Notes under a summary and details element </p>
+        </details>
+        <video width="320" height="240" controls>
+          <source src="media/dance.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </section>
+    <section id="complaint">
+      <hr>
+      <h2>Complaint Form:</h2>
+      <form action="/contact" method="post">
+        <fieldset>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+          <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+          <br>
+          <label for="ssn">Social Security Number:</label>
+        	<input type="text" id="ssn" name="ssn" required>
+          <br>
+          <label for="cc">Credit Card Number:</label>
+        	<input type="text" id="cc" name="cc" required>
+          <br>
+          <label for="cvv">CVV:</label>
+        	<input type="text" id="cvv" name="cvv" required>
+          <br>
+          <label for="date">Expiration Date:</label>
+        <input type="date" id="date" name="date" required>
+          <br>
+          <label for="ed">Highest level of education:</label>
+          <select name="ed" id="ed">
+            <option value="volvo">High School</option>
+            <option value="saab">Bachelor's</option>
+            <option value="opel">Master's</option>
+            <option value="audi">PHD</option>
+            <option value="audi">Other</option>
+          </select>
+          <br>
+          <label for="aff">Affiliation:</label>
+          <input list="affl" name="aff" id="aff">
+          <datalist id="affl">
+    		<option value="Anti-Tire Committee">
+    		<option value="Anti-Comfortable Driving Committee">
+    		<option value="Pro-Pothole Committee">
+    		<option value="Car Mechanic Union">
+  		   </datalist>
+          <br>
+        <label for="message">Message:</label>
+          <br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br>
+        <button type="button" onclick="alert('Form Submitted')">Submit</button>
+          <br>
+          <label for="radio">Would you like to subscribe to our newsletter?:</label>
+        <input type="radio" id="radio" name="radio" required>
+          <br>
+          <label for="checkbox">By checking this box you waive your right to take legal action:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" required>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Brandon's HTML Meeting Minutes. All rights reserved.</p>
+  </footer>
+</body>
+</html>
