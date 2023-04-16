@@ -10,7 +10,6 @@ nav {
   top: 0;
   left: 0;
   background-color: #32302f;
-  color: #98971a;
   font-family: Monospace;
   z-index: 1;
   max-width: 100%;
@@ -103,4 +102,111 @@ footer {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
+}
+
+body {
+    font-family: Monospace;
+    background-color: #282828;
+    margin: 0;
+}
+
+/* Three grid-related attributes */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 1px;
+    grid-auto-rows: minmax(180px, auto);
+    grid-auto-flow: dense;
+    padding: 1px;
+   
+}
+
+.grid-item {
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #504945;
+    background-color: #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.span-2 {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+    background-color: #928374;
+}
+
+.span-3 {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+    background-color: #a89984;
+}
+
+.span-4 {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+    background-color: #bdae93;
+}
+
+.span-5 {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+    background-color: #7c6f64;
+}
+
+.span-6 {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+    background-color: #665c54;
+}
+
+/* Three flex-related attributes */
+.flex-container {
+  display: flex;
+  background-color: #282828;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #a89984;
+  color: #504945;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* Media query */ 
+@media all and (max-width: 1000px) {
+    .span-2 {
+        grid-column-end: span 2;
+        grid-row-end: span 2;
+        background-color: #cc241d;
+    }
+
+    .span-3 {
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+        background-color: #689d6a;
+    }
+
+    .span-4 {
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+        background-color: #d79921;
+    }
+
+    .span-5 {
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+        background-color: #458588;
+    }
+    .span-6 {
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+        background-color: #b16286;
+    }
 }
