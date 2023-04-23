@@ -1,0 +1,6 @@
+- What did I work on yesterday?
+    - Notes
+- What am I working on today?
+    - Organizing my notes
+- What issues are blocking me?
+    - My notes are in a language I don't understand
